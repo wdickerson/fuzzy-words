@@ -6,7 +6,6 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -16,23 +15,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              cacheDirectory: true,
-              babelrc: false,
-              plugins: [
-                [
-                  "@babel/plugin-proposal-class-properties", 
-                  { "loose": true }
-                ]
-              ],
               presets: [
-                [
-                  "@babel/preset-env", 
-                  {
-                    "targets": {
-                      "chrome": "60"
-                    }
-                  }
-                ],
                 "@babel/react"
               ],
             }

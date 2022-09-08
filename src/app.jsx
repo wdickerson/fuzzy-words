@@ -2,17 +2,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './fuzzy.scss';
 import { uuid } from './uuid.js';
-import _ from 'lodash';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-//import { faLinkedin } from '@fortawesome/free-solid-svg-icons'
-
-library.add(fab)
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
 class TitleHeader extends React.Component {
@@ -194,12 +189,12 @@ class Footer extends React.Component {
         <div className='ml-1 mr-1'>A project by William Dickerson</div>
         <div className='ml-1 mr-1'>
           <a className='text-secondary' href='https://www.github.com/wdickerson'>
-            <FontAwesomeIcon icon={['fab', 'github']} />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
         <div className='ml-1 mr-1'>
           <a className='text-secondary' href='https://www.linkedin.com/in/wdickerson08'>
-            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
         <div className='ml-1 mr-1'>|</div>
