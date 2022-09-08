@@ -44,7 +44,7 @@ class TitleHeader extends React.Component {
                  aria-label="Title" 
                  autofocus='true' />
           <div class="input-group-append">
-            <span onClick={this.toggleEditable} class="input-group-text">&#x2713;</span>
+            <span onClick={this.toggleEditable} class="input-group-text">&#10003;</span>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ class TitleHeader extends React.Component {
     const staticTitle = (
       <div className="navbar-nav nav-story-title fuzzyable"
            onClick={this.toggleEditable}>
-        {this.props.currentStoryTitle}  &#x270E;
+        {this.props.currentStoryTitle}  &#9998;
       </div>
     );
     
@@ -128,7 +128,7 @@ class Shelf extends React.Component {
             </a>
             <a className="ml-2 small align-self-center"
                onClick={this.props.deleteStory.bind(this, s)}>
-                 &#x1F5D1;
+                 &#128465;
             </a>
           </div>
         </li>
